@@ -115,6 +115,7 @@ textarea {
 #car {
     width: 250px;
     float: right;
+    margin-right: -250px;
 }
 
 #left-wheel, #right-wheel {

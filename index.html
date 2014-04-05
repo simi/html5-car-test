@@ -21,6 +21,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <audio id="car-horn">
+          <source src="car-horn.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+
         <div id="fixer">
             <div id="canvas">
                 <svg id="car" data-0="margin-right: -250px"; data-5000="margin-right: 2400px">
@@ -54,6 +59,9 @@
             var s = skrollr.init();
             $(document).ready(function(){
                 $("html, body").animate({ scrollTop: $(document).height() }, 8000);
+                if ($(document).scrollTop = $(document).height()/2) {
+                  document.getElementById('car-horn').play();
+                }
                 return false;
             });
         </script>
